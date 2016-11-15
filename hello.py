@@ -5,8 +5,8 @@ def application(environ, start_response):
     result = []
     if query is not None:
         if query.find('&') >= 0:
-            result = query.split('&')
-        else result.append(query)
+            result = [x + '\n' for x in query.split('&')]
+        else result.append(query + '\n')
     start_response(status, headers)
     return result
 
