@@ -1,0 +1,14 @@
+[2016-11-16 11:38:19 +0000] [1365] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 11:38:19 +0000] [1365] [INFO] Listening at: http://0.0.0.0:8080 (1365)
+[2016-11-16 11:38:19 +0000] [1365] [INFO] Using worker: sync
+[2016-11-16 11:38:19 +0000] [1370] [INFO] Booting worker with pid: 1370
+[2016-11-16 11:38:37 +0000] [1365] [INFO] Handling signal: int
+[2016-11-16 11:38:37 +0000] [1370] [INFO] Worker exiting (pid: 1370)
+[2016-11-16 11:38:37 +0000] [1365] [INFO] Shutting down: Master
+[2016-11-16 11:40:24 +0000] [1376] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 11:40:24 +0000] [1376] [INFO] Listening at: http://0.0.0.0:8080 (1376)
+[2016-11-16 11:40:24 +0000] [1376] [INFO] Using worker: sync
+[2016-11-16 11:40:24 +0000] [1381] [INFO] Booting worker with pid: 1381
+[2016-11-16 11:41:41 +0000] [1381] [INFO] Worker exiting (pid: 1381)
+[2016-11-16 11:41:41 +0000] [1376] [INFO] Handling signal: term
+[2016-11-16 11:41:41 +0000] [1376] [INFO] Shutting down: Master
