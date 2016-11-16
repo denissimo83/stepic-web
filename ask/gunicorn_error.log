@@ -1,0 +1,60 @@
+[2016-11-16 23:27:16 +0000] [2462] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:27:16 +0000] [2462] [INFO] Listening at: http://0.0.0.0:8000 (2462)
+[2016-11-16 23:27:16 +0000] [2462] [INFO] Using worker: sync
+[2016-11-16 23:27:16 +0000] [2468] [INFO] Booting worker with pid: 2468
+[2016-11-16 23:29:41 +0000] [2462] [INFO] Handling signal: term
+[2016-11-16 13:29:41 +0000] [2468] [INFO] Worker exiting (pid: 2468)
+[2016-11-16 23:29:41 +0000] [2462] [INFO] Shutting down: Master
+[2016-11-16 23:29:41 +0000] [2523] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:29:41 +0000] [2523] [INFO] Listening at: http://0.0.0.0:8000 (2523)
+[2016-11-16 23:29:41 +0000] [2523] [INFO] Using worker: sync
+[2016-11-16 23:29:41 +0000] [2529] [INFO] Booting worker with pid: 2529
+[2016-11-16 13:31:49 +0000] [2529] [INFO] Worker exiting (pid: 2529)
+[2016-11-16 23:31:49 +0000] [2523] [INFO] Handling signal: term
+[2016-11-16 23:31:49 +0000] [2523] [INFO] Shutting down: Master
+[2016-11-16 23:31:49 +0000] [2596] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:31:49 +0000] [2596] [INFO] Listening at: http://0.0.0.0:8000 (2596)
+[2016-11-16 23:31:49 +0000] [2596] [INFO] Using worker: sync
+[2016-11-16 23:31:49 +0000] [2601] [INFO] Booting worker with pid: 2601
+[2016-11-16 23:41:59 +0000] [2596] [INFO] Handling signal: term
+[2016-11-16 13:41:59 +0000] [2601] [INFO] Worker exiting (pid: 2601)
+[2016-11-16 23:41:59 +0000] [2596] [INFO] Shutting down: Master
+[2016-11-16 23:41:59 +0000] [2677] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:41:59 +0000] [2677] [INFO] Listening at: http://0.0.0.0:8000 (2677)
+[2016-11-16 23:41:59 +0000] [2677] [INFO] Using worker: sync
+[2016-11-16 23:41:59 +0000] [2682] [INFO] Booting worker with pid: 2682
+[2016-11-16 23:44:28 +0000] [2677] [INFO] Handling signal: term
+[2016-11-16 13:44:28 +0000] [2682] [INFO] Worker exiting (pid: 2682)
+[2016-11-16 23:44:28 +0000] [2677] [INFO] Shutting down: Master
+[2016-11-16 23:44:28 +0000] [2721] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:44:28 +0000] [2721] [INFO] Listening at: http://0.0.0.0:8000 (2721)
+[2016-11-16 23:44:28 +0000] [2721] [INFO] Using worker: sync
+[2016-11-16 23:44:28 +0000] [2727] [INFO] Booting worker with pid: 2727
+[2016-11-16 23:46:41 +0000] [2721] [INFO] Handling signal: term
+[2016-11-16 13:46:41 +0000] [2727] [INFO] Worker exiting (pid: 2727)
+[2016-11-16 23:46:41 +0000] [2721] [INFO] Shutting down: Master
+[2016-11-16 23:46:41 +0000] [2763] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:46:41 +0000] [2763] [INFO] Listening at: http://0.0.0.0:8000 (2763)
+[2016-11-16 23:46:41 +0000] [2763] [INFO] Using worker: sync
+[2016-11-16 23:46:41 +0000] [2768] [INFO] Booting worker with pid: 2768
+[2016-11-16 23:48:14 +0000] [2763] [INFO] Handling signal: term
+[2016-11-16 13:48:14 +0000] [2768] [INFO] Worker exiting (pid: 2768)
+[2016-11-16 23:48:14 +0000] [2763] [INFO] Shutting down: Master
+[2016-11-16 23:48:14 +0000] [2804] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:48:14 +0000] [2804] [INFO] Listening at: http://0.0.0.0:8000 (2804)
+[2016-11-16 23:48:14 +0000] [2804] [INFO] Using worker: sync
+[2016-11-16 23:48:14 +0000] [2810] [INFO] Booting worker with pid: 2810
+[2016-11-16 23:53:04 +0000] [2804] [INFO] Handling signal: term
+[2016-11-16 13:53:04 +0000] [2810] [INFO] Worker exiting (pid: 2810)
+[2016-11-16 23:53:04 +0000] [2804] [INFO] Shutting down: Master
+[2016-11-16 23:53:04 +0000] [2865] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:53:04 +0000] [2865] [INFO] Listening at: http://0.0.0.0:8000 (2865)
+[2016-11-16 23:53:04 +0000] [2865] [INFO] Using worker: sync
+[2016-11-16 23:53:04 +0000] [2871] [INFO] Booting worker with pid: 2871
+[2016-11-16 23:54:43 +0000] [2865] [INFO] Handling signal: term
+[2016-11-16 13:54:43 +0000] [2871] [INFO] Worker exiting (pid: 2871)
+[2016-11-16 23:54:43 +0000] [2865] [INFO] Shutting down: Master
+[2016-11-16 23:54:43 +0000] [2908] [INFO] Starting gunicorn 19.6.0
+[2016-11-16 23:54:43 +0000] [2908] [INFO] Listening at: http://0.0.0.0:8000 (2908)
+[2016-11-16 23:54:43 +0000] [2908] [INFO] Using worker: sync
+[2016-11-16 23:54:43 +0000] [2914] [INFO] Booting worker with pid: 2914
