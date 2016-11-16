@@ -1,0 +1,6 @@
+192.168.0.106 - - [17/Nov/2016:00:32:51 +1000] "GET /hello/?a=1 HTTP/1.1" 200 14 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
+192.168.0.106 - - [17/Nov/2016:00:33:02 +1000] "GET /hello/ HTTP/1.1" 200 11 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
+192.168.0.106 - - [17/Nov/2016:00:33:13 +1000] "GET /hello/?asda=asf HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
+192.168.0.106 - - [17/Nov/2016:00:59:18 +1000] "GET /ask/ HTTP/1.1" 404 169 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
+192.168.0.106 - - [17/Nov/2016:00:59:23 +1000] "GET /ask/1 HTTP/1.1" 404 169 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
+192.168.0.106 - - [17/Nov/2016:01:00:09 +1000] "GET /ask/ HTTP/1.1" 404 169 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
