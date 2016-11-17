@@ -1,0 +1,2 @@
+2016/11/17 17:32:15 [error] 4676#4676: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.0.106, server: , request: "GET / HTTP/1.1", host: "192.168.0.103"
+2016/11/17 17:32:15 [error] 4676#4676: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.0.106, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.0.103", referrer: "http://192.168.0.103/"

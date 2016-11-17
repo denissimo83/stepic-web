@@ -1,14 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.decorators.http import require_GET
 from django.core.paginator import Paginator
-
+from qa.models import Question
 
 def test(request, *args, **kwargs):
     return HttpResponse('OK')
 
 def question_detail(request, id):
     question = get_object_or_404(Question, id=id)
-    return render(request, 'qa/question_detail.html', {
+    return render(request, 'question_detail.html', {
         'question': question,
         'answers': question.answer_set.all()[:],
         })
@@ -39,7 +39,7 @@ def question_list(request):
     questions = Question.objects.all()
     #paginator.baseurl = '/?page='
     page = paginate(request, questions)
-    return render(request, 'qa/questions.html', {
+    return render(request, 'questions.html', {
         'questions': page.object_list,
         'page': page,
     })
@@ -47,7 +47,7 @@ def question_list(request):
 def popular_questions(request):
     questions = Question.objects.all().popular
     page = paginate(request, questions)
-    return render(request, 'qa/popular_questions.html', {
+    return render(request, 'popular_questions.html', {
         'questions': page.object_list,
         'page': page,
     })

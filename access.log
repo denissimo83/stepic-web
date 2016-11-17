@@ -4,3 +4,6 @@
 192.168.0.106 - - [17/Nov/2016:00:59:18 +1000] "GET /ask/ HTTP/1.1" 404 169 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
 192.168.0.106 - - [17/Nov/2016:00:59:23 +1000] "GET /ask/1 HTTP/1.1" 404 169 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
 192.168.0.106 - - [17/Nov/2016:01:00:09 +1000] "GET /ask/ HTTP/1.1" 404 169 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"
+192.168.0.106 - - [17/Nov/2016:17:32:15 +1000] "GET / HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36"
+192.168.0.106 - - [17/Nov/2016:17:32:15 +1000] "GET /favicon.ico HTTP/1.1" 404 571 "http://192.168.0.103/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36"
+192.168.0.106 - - [17/Nov/2016:17:35:05 +1000] "GET / HTTP/1.1" 200 145 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36"

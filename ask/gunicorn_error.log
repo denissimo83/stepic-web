@@ -237,3 +237,103 @@ Traceback (most recent call last):
 [2016-11-17 14:25:46 +0000] [3718] [INFO] Worker exiting (pid: 3718)
 [2016-11-17 14:25:46 +0000] [3713] [INFO] Shutting down: Master
 [2016-11-17 14:25:46 +0000] [3713] [INFO] Reason: Worker failed to boot.
+[2016-11-17 17:15:24 +0000] [4111] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:15:24 +0000] [4111] [INFO] Listening at: http://0.0.0.0:8000 (4111)
+[2016-11-17 17:15:24 +0000] [4111] [INFO] Using worker: sync
+[2016-11-17 17:15:24 +0000] [4116] [INFO] Booting worker with pid: 4116
+[2016-11-17 17:17:04 +0000] [4111] [INFO] Handling signal: term
+[2016-11-17 07:17:04 +0000] [4116] [INFO] Worker exiting (pid: 4116)
+[2016-11-17 17:17:04 +0000] [4111] [INFO] Shutting down: Master
+[2016-11-17 17:17:04 +0000] [4168] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:17:04 +0000] [4168] [INFO] Listening at: http://0.0.0.0:8000 (4168)
+[2016-11-17 17:17:04 +0000] [4168] [INFO] Using worker: sync
+[2016-11-17 17:17:04 +0000] [4173] [INFO] Booting worker with pid: 4173
+[2016-11-17 17:17:44 +0000] [4168] [CRITICAL] WORKER TIMEOUT (pid:4173)
+[2016-11-17 07:17:44 +0000] [4173] [INFO] Worker exiting (pid: 4173)
+[2016-11-17 17:17:44 +0000] [4180] [INFO] Booting worker with pid: 4180
+[2016-11-17 17:17:58 +0000] [4168] [INFO] Handling signal: term
+[2016-11-17 17:17:58 +0000] [4228] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:17:58 +0000] [4228] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:17:58 +0000] [4228] [ERROR] Retrying in 1 second.
+[2016-11-17 17:17:59 +0000] [4228] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:17:59 +0000] [4228] [ERROR] Retrying in 1 second.
+[2016-11-17 17:18:00 +0000] [4228] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:18:00 +0000] [4228] [ERROR] Retrying in 1 second.
+[2016-11-17 17:18:01 +0000] [4228] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:18:01 +0000] [4228] [ERROR] Retrying in 1 second.
+[2016-11-17 17:18:02 +0000] [4228] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:18:02 +0000] [4228] [ERROR] Retrying in 1 second.
+[2016-11-17 17:18:03 +0000] [4228] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2016-11-17 07:18:03 +0000] [4180] [INFO] Worker exiting (pid: 4180)
+[2016-11-17 17:18:03 +0000] [4168] [INFO] Shutting down: Master
+[2016-11-17 17:20:21 +0000] [4287] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:20:21 +0000] [4287] [INFO] Listening at: http://0.0.0.0:8000 (4287)
+[2016-11-17 17:20:21 +0000] [4287] [INFO] Using worker: sync
+[2016-11-17 17:20:21 +0000] [4292] [INFO] Booting worker with pid: 4292
+[2016-11-17 17:22:27 +0000] [4287] [INFO] Handling signal: term
+[2016-11-17 07:22:27 +0000] [4292] [INFO] Worker exiting (pid: 4292)
+[2016-11-17 17:22:28 +0000] [4287] [INFO] Shutting down: Master
+[2016-11-17 17:22:28 +0000] [4349] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:22:28 +0000] [4349] [INFO] Listening at: http://0.0.0.0:8000 (4349)
+[2016-11-17 17:22:28 +0000] [4349] [INFO] Using worker: sync
+[2016-11-17 17:22:28 +0000] [4354] [INFO] Booting worker with pid: 4354
+[2016-11-17 17:23:05 +0000] [4349] [CRITICAL] WORKER TIMEOUT (pid:4354)
+[2016-11-17 07:23:05 +0000] [4354] [INFO] Worker exiting (pid: 4354)
+[2016-11-17 17:23:05 +0000] [4357] [INFO] Booting worker with pid: 4357
+[2016-11-17 17:23:27 +0000] [4349] [INFO] Handling signal: term
+[2016-11-17 07:23:27 +0000] [4357] [INFO] Worker exiting (pid: 4357)
+[2016-11-17 17:23:27 +0000] [4349] [INFO] Shutting down: Master
+[2016-11-17 17:23:27 +0000] [4405] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:23:27 +0000] [4405] [INFO] Listening at: http://0.0.0.0:8000 (4405)
+[2016-11-17 17:23:27 +0000] [4405] [INFO] Using worker: sync
+[2016-11-17 17:23:27 +0000] [4410] [INFO] Booting worker with pid: 4410
+[2016-11-17 17:23:57 +0000] [4405] [INFO] Handling signal: term
+[2016-11-17 17:23:58 +0000] [4462] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:23:58 +0000] [4462] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:23:58 +0000] [4462] [ERROR] Retrying in 1 second.
+[2016-11-17 17:23:59 +0000] [4462] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:23:59 +0000] [4462] [ERROR] Retrying in 1 second.
+[2016-11-17 17:24:00 +0000] [4462] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:24:00 +0000] [4462] [ERROR] Retrying in 1 second.
+[2016-11-17 17:24:01 +0000] [4462] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:24:01 +0000] [4462] [ERROR] Retrying in 1 second.
+[2016-11-17 17:24:02 +0000] [4462] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-11-17 17:24:02 +0000] [4462] [ERROR] Retrying in 1 second.
+[2016-11-17 17:24:03 +0000] [4462] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2016-11-17 07:24:04 +0000] [4410] [INFO] Worker exiting (pid: 4410)
+[2016-11-17 17:24:04 +0000] [4405] [INFO] Shutting down: Master
+[2016-11-17 17:24:14 +0000] [4514] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:24:14 +0000] [4514] [INFO] Listening at: http://0.0.0.0:8000 (4514)
+[2016-11-17 17:24:14 +0000] [4514] [INFO] Using worker: sync
+[2016-11-17 17:24:14 +0000] [4519] [INFO] Booting worker with pid: 4519
+[2016-11-17 07:27:44 +0000] [4519] [INFO] Worker exiting (pid: 4519)
+[2016-11-17 17:27:44 +0000] [4514] [INFO] Handling signal: term
+[2016-11-17 17:27:44 +0000] [4514] [INFO] Shutting down: Master
+[2016-11-17 17:27:45 +0000] [4573] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:27:45 +0000] [4573] [INFO] Listening at: http://0.0.0.0:8000 (4573)
+[2016-11-17 17:27:45 +0000] [4573] [INFO] Using worker: sync
+[2016-11-17 17:27:45 +0000] [4578] [INFO] Booting worker with pid: 4578
+[2016-11-17 17:28:24 +0000] [4573] [CRITICAL] WORKER TIMEOUT (pid:4578)
+[2016-11-17 07:28:24 +0000] [4578] [INFO] Worker exiting (pid: 4578)
+[2016-11-17 17:28:24 +0000] [4584] [INFO] Booting worker with pid: 4584
+[2016-11-17 07:29:23 +0000] [4584] [INFO] Worker exiting (pid: 4584)
+[2016-11-17 17:29:23 +0000] [4573] [INFO] Handling signal: term
+[2016-11-17 17:29:23 +0000] [4573] [INFO] Shutting down: Master
+[2016-11-17 17:29:23 +0000] [4629] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:29:23 +0000] [4629] [INFO] Listening at: http://0.0.0.0:8000 (4629)
+[2016-11-17 17:29:23 +0000] [4629] [INFO] Using worker: sync
+[2016-11-17 17:29:23 +0000] [4634] [INFO] Booting worker with pid: 4634
+[2016-11-17 17:31:32 +0000] [4629] [INFO] Handling signal: term
+[2016-11-17 07:31:32 +0000] [4634] [INFO] Worker exiting (pid: 4634)
+[2016-11-17 17:31:32 +0000] [4629] [INFO] Shutting down: Master
+[2016-11-17 17:31:32 +0000] [4693] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:31:32 +0000] [4693] [INFO] Listening at: http://0.0.0.0:8000 (4693)
+[2016-11-17 17:31:32 +0000] [4693] [INFO] Using worker: sync
+[2016-11-17 17:31:32 +0000] [4698] [INFO] Booting worker with pid: 4698
+[2016-11-17 17:34:52 +0000] [4693] [INFO] Handling signal: term
+[2016-11-17 07:34:52 +0000] [4698] [INFO] Worker exiting (pid: 4698)
+[2016-11-17 17:34:52 +0000] [4693] [INFO] Shutting down: Master
+[2016-11-17 17:34:52 +0000] [4769] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 17:34:52 +0000] [4769] [INFO] Listening at: http://0.0.0.0:8000 (4769)
+[2016-11-17 17:34:52 +0000] [4769] [INFO] Using worker: sync
+[2016-11-17 17:34:52 +0000] [4774] [INFO] Booting worker with pid: 4774
