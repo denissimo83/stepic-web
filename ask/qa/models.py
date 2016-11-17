@@ -17,14 +17,14 @@ class Question(models.Model):
     likes = models.ManyToManyField(User, related_name='likes_user_set')
     def __unicode__(self):
         return self.title
-    def get_absolute_url(self)
+    def get_absolute_url(self):
         return '/question/%d/' % self.pk
-    objects = QueryManager()
+    objects = QuestionManager()
 
 
 class Answer(models.Model):
     text = models.TextField()
-    added_at = DateTimeField(auto_now_add=True)
+    added_at = models.DateTimeField(auto_now_add=True)
     question = models.ForeignKey(Question)
     author = models.ForeignKey(User)
 

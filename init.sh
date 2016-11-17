@@ -8,4 +8,4 @@ cd /home/box/web
 gunicorn -D -c /home/box/web/etc/hello.py hello:application
 cd /home/box/web/ask
 gunicorn -D -c /home/box/web/etc/ask.py ask.wsgi:application
-sudo /etc/init.d/mysql start
+#sudo /etc/init.d/mysql start

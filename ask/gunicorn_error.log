@@ -93,3 +93,147 @@
 [2016-11-17 01:04:26 +0000] [1689] [INFO] Listening at: http://0.0.0.0:8000 (1689)
 [2016-11-17 01:04:26 +0000] [1689] [INFO] Using worker: sync
 [2016-11-17 01:04:26 +0000] [1695] [INFO] Booting worker with pid: 1695
+[2016-11-17 04:23:07 +0000] [1695] [INFO] Worker exiting (pid: 1695)
+[2016-11-17 14:23:07 +0000] [1689] [INFO] Handling signal: term
+[2016-11-17 14:23:07 +0000] [1689] [INFO] Shutting down: Master
+[2016-11-17 14:23:07 +0000] [3594] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 14:23:07 +0000] [3594] [INFO] Listening at: http://0.0.0.0:8000 (3594)
+[2016-11-17 14:23:07 +0000] [3594] [INFO] Using worker: sync
+[2016-11-17 14:23:07 +0000] [3599] [INFO] Booting worker with pid: 3599
+[2016-11-17 14:23:07 +0000] [3599] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.6/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.6/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/box/web/ask/ask/wsgi.py", line 13, in <module>
+    from django.core.wsgi import get_wsgi_application
+  File "/usr/lib/python2.6/site-packages/django/core/wsgi.py", line 1, in <module>
+    from django.core.handlers.wsgi import WSGIHandler
+  File "/usr/lib/python2.6/site-packages/django/core/handlers/wsgi.py", line 11, in <module>
+    from django.core.handlers import base
+  File "/usr/lib/python2.6/site-packages/django/core/handlers/base.py", line 12, in <module>
+    from django.db import connections, transaction
+  File "/usr/lib/python2.6/site-packages/django/db/__init__.py", line 83, in <module>
+    signals.request_started.connect(reset_queries)
+  File "/usr/lib/python2.6/site-packages/django/dispatch/dispatcher.py", line 88, in connect
+    if settings.DEBUG:
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/box/web/ask/ask/settings.py", line 65
+     'HOST' : '127.0.0.1',
+            ^
+ SyntaxError: invalid syntax
+[2016-11-17 14:23:07 +0000] [3599] [INFO] Worker exiting (pid: 3599)
+[2016-11-17 14:23:07 +0000] [3594] [INFO] Shutting down: Master
+[2016-11-17 14:23:07 +0000] [3594] [INFO] Reason: Worker failed to boot.
+[2016-11-17 14:25:06 +0000] [3656] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 14:25:06 +0000] [3656] [INFO] Listening at: http://0.0.0.0:8000 (3656)
+[2016-11-17 14:25:06 +0000] [3656] [INFO] Using worker: sync
+[2016-11-17 14:25:06 +0000] [3661] [INFO] Booting worker with pid: 3661
+[2016-11-17 14:25:06 +0000] [3661] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.6/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.6/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/box/web/ask/ask/wsgi.py", line 13, in <module>
+    from django.core.wsgi import get_wsgi_application
+  File "/usr/lib/python2.6/site-packages/django/core/wsgi.py", line 1, in <module>
+    from django.core.handlers.wsgi import WSGIHandler
+  File "/usr/lib/python2.6/site-packages/django/core/handlers/wsgi.py", line 11, in <module>
+    from django.core.handlers import base
+  File "/usr/lib/python2.6/site-packages/django/core/handlers/base.py", line 12, in <module>
+    from django.db import connections, transaction
+  File "/usr/lib/python2.6/site-packages/django/db/__init__.py", line 83, in <module>
+    signals.request_started.connect(reset_queries)
+  File "/usr/lib/python2.6/site-packages/django/dispatch/dispatcher.py", line 88, in connect
+    if settings.DEBUG:
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/box/web/ask/ask/settings.py", line 65
+     'HOST' : '127.0.0.1',
+            ^
+ SyntaxError: invalid syntax
+[2016-11-17 14:25:06 +0000] [3661] [INFO] Worker exiting (pid: 3661)
+[2016-11-17 14:25:06 +0000] [3656] [INFO] Shutting down: Master
+[2016-11-17 14:25:06 +0000] [3656] [INFO] Reason: Worker failed to boot.
+[2016-11-17 14:25:46 +0000] [3713] [INFO] Starting gunicorn 19.6.0
+[2016-11-17 14:25:46 +0000] [3713] [INFO] Listening at: http://0.0.0.0:8000 (3713)
+[2016-11-17 14:25:46 +0000] [3713] [INFO] Using worker: sync
+[2016-11-17 14:25:46 +0000] [3718] [INFO] Booting worker with pid: 3718
+[2016-11-17 14:25:46 +0000] [3718] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.6/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.6/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/box/web/ask/ask/wsgi.py", line 13, in <module>
+    from django.core.wsgi import get_wsgi_application
+  File "/usr/lib/python2.6/site-packages/django/core/wsgi.py", line 1, in <module>
+    from django.core.handlers.wsgi import WSGIHandler
+  File "/usr/lib/python2.6/site-packages/django/core/handlers/wsgi.py", line 11, in <module>
+    from django.core.handlers import base
+  File "/usr/lib/python2.6/site-packages/django/core/handlers/base.py", line 12, in <module>
+    from django.db import connections, transaction
+  File "/usr/lib/python2.6/site-packages/django/db/__init__.py", line 83, in <module>
+    signals.request_started.connect(reset_queries)
+  File "/usr/lib/python2.6/site-packages/django/dispatch/dispatcher.py", line 88, in connect
+    if settings.DEBUG:
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python2.6/site-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/box/web/ask/ask/settings.py", line 65
+     'HOST' : '127.0.0.1',
+            ^
+ SyntaxError: invalid syntax
+[2016-11-17 14:25:46 +0000] [3718] [INFO] Worker exiting (pid: 3718)
+[2016-11-17 14:25:46 +0000] [3713] [INFO] Shutting down: Master
+[2016-11-17 14:25:46 +0000] [3713] [INFO] Reason: Worker failed to boot.
