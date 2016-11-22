@@ -45,7 +45,7 @@ def question_list(request):
     })
 
 def popular_questions(request):
-    questions = Question.objects.all().popular
+    questions = Question.objects.popular()
     page = paginate(request, questions)
     return render(request, 'popular_questions.html', {
         'questions': page.object_list,

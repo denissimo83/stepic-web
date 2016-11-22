@@ -337,3 +337,28 @@ Traceback (most recent call last):
 [2016-11-17 17:34:52 +0000] [4769] [INFO] Listening at: http://0.0.0.0:8000 (4769)
 [2016-11-17 17:34:52 +0000] [4769] [INFO] Using worker: sync
 [2016-11-17 17:34:52 +0000] [4774] [INFO] Booting worker with pid: 4774
+2016-11-22 09:46:30 [1196] [INFO] Starting gunicorn 17.5
+2016-11-22 09:46:30 [1196] [INFO] Listening at: http://0.0.0.0:8000 (1196)
+2016-11-22 09:46:30 [1196] [INFO] Using worker: sync
+2016-11-22 09:46:30 [1201] [INFO] Booting worker with pid: 1201
+Internal Server Error: /popular/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/box/web/ask/qa/views.py", line 48, in popular_questions
+    questions = Question.objects.all().popular
+AttributeError: 'QuerySet' object has no attribute 'popular'
+Internal Server Error: /popular/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/box/web/ask/qa/views.py", line 48, in popular_questions
+    questions = Question.objects.all().popular
+AttributeError: 'QuerySet' object has no attribute 'popular'
+2016-11-22 09:49:23 [1196] [INFO] Handling signal: term
+2016-11-22 09:49:23 [1201] [INFO] Worker exiting (pid: 1201)
+2016-11-22 09:49:23 [1196] [INFO] Shutting down: Master
+2016-11-22 09:49:23 [1311] [INFO] Starting gunicorn 17.5
+2016-11-22 09:49:23 [1311] [INFO] Listening at: http://0.0.0.0:8000 (1311)
+2016-11-22 09:49:23 [1311] [INFO] Using worker: sync
+2016-11-22 09:49:23 [1316] [INFO] Booting worker with pid: 1316
