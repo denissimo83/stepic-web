@@ -6,7 +6,7 @@ class QuestionManager(models.Manager):
     def new(self):
         return self.order_by('-added_at')
     def popular(self):
-        return self.order_by('rating')
+        return self.order_by('-rating')
 
 class Question(models.Model):
     title = models.CharField(max_length=255)
@@ -20,6 +20,8 @@ class Question(models.Model):
     def get_absolute_url(self):
         return '/question/%d/' % self.pk
     objects = QuestionManager()
+    class Meta:
+        ordering = ['-id']
 
 
 class Answer(models.Model):

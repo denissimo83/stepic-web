@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>QA</title>
+    </head>
+    <body>
+
+    {% for q in questions %}
+<------><h1> {{ q.title }} </h1>.
+<------><a href = "{{ q.get_absolute_url }}"> {{ q.title }} </a>.
+    </body>
+</html>
+
+

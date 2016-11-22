@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>QA</title>
+    </head>
+
+    <body>
+	<header>
+	    <h1>{{ question.title }}</h1>
+	</header>
+	<p>{{ question.text }}</p>
+    {% for a in answers %}
+	<ul><li>
+		{{ a.text }}
+	</li></ul>
+    </body>
+</html>
