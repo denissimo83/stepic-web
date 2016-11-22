@@ -39,7 +39,7 @@ def question_list(request):
     questions = Question.objects.all()
     #paginator.baseurl = '/?page='
     page = paginate(request, questions)
-    return render(request, 'qa/questions.html',
+    return render(request, 'qa/questions.html', {
         'questions': page.object_list,
         'page': page,
     })
@@ -47,7 +47,7 @@ def question_list(request):
 def popular_questions(request):
     questions = Question.objects.all().popular
     page = paginate(request, questions)
-    return render(request, 'qa/popular_questions.html',
+    return render(request, 'qa/popular_questions.html', {
         'questions': page.object_list,
         'page': page,
     })
