@@ -2,11 +2,15 @@ from django.shortcuts import render, get_object_or_404
 from django.views.decorators.http import require_GET
 from django.core.paginator import Paginator
 from qa.models import Question
+from django.http import HttpResponseRedirect
+from qa.forms import AskForm, AnswerForm
 
 def test(request, *args, **kwargs):
     return HttpResponse('OK')
 
 def question_detail(request, id):
+    if request.method == POST:
+        return answer_add(request, id)
     question = get_object_or_404(Question, id=id)
     return render(request, 'question_detail.html', {
         'question': question,
@@ -52,3 +56,27 @@ def popular_questions(request):
         'page': page,
     })
 
+
+def question_add(request):
+    if request.method == POST:
+        form = AskForm(request.POST)
+        if form.is_valid():
+            question = form.save()
+            url = question.get_absolute_url()
+            return HttpResponseRedirect(url)
+    else:
+        form = AskForm()
+    return render(request, 'question_add.html', {'form': form, })
+
+
+def answer_add(request, id=1):
+    if request.method == POST:
+        form = AnswerForm(request.POST, initial={'question': id})
+        if form.is_valid():
+            answer = form.save()
+            question = answer.question
+            url = question.get_absolute_url()
+            return HttpResponseRedirect(url)
+    else:
+        form = AnswerForm()
+    return render(request, 'answer_add.html', {'form': form, })
