@@ -1,4 +1,5 @@
 from django import forms
+from qa.models import Question, Answer
 
 class AskForm(forms.Form):
     title = forms.CharField(max_length=255)
@@ -7,14 +8,14 @@ class AskForm(forms.Form):
     def clean_title(self):
         title = self.cleaned_data['title']
         if not (title or len(title) > 0):
-            raise forms.ValidationError(u'Название не может быть пустым')
+            raise forms.ValidationError(u'Empty title')
         return title
 
 
     def clean_text(self):
         text = self.cleaned_data['text']
         if not (text or len(text) > 0):
-            raise forms.ValidationError(u'Вопрос не может быть пустым')
+            raise forms.ValidationError(u'Empty question')
         return text
 
 
@@ -30,22 +31,25 @@ class AnswerForm(forms.Form):
     question_id = forms.IntegerField(widget=forms.HiddenInput())
     text = forms.CharField(widget=forms.Textarea)
 
-    def clean_question(self):
-        question = self.cleaned_data['question']
-        if not (question or question > 0):
-            raise forms.ValidationError(u'Вопрос не существует')
-        return question
+#    def clean_question(self):
+#        question = self.cleaned_data['question']
+#        if not (question or question > 0):
+#            raise forms.ValidationError(u'Question does no exist')
+#        return question
 
 
-    def clean_text(self):
-        text = self.cleaned_data['text']
-        if not (text or len(text) > 0):
-            raise forms.ValidationError(u'Ответ не может быть пустым')
-        return text
+#    def clean_text(self):
+#        text = self.cleaned_data['text']
+#        if not text:
+#            raise forms.ValidationError(u'Empty question')
+#        return text
 
+    def clean(self):
+        return self.cleaned_data
 
     def save(self):
         answer = Answer(**self.cleaned_data)
+        answer.author_id = 1
         answer.save()
         return answer
 
