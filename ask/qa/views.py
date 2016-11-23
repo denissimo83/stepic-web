@@ -12,7 +12,7 @@ def question_detail(request, id):
     if request.method == 'POST':
         return answer_add(request, id)
     question = get_object_or_404(Question, id=id)
-    form = AnswerForm(initial={'question_id':id,})
+    form = AnswerForm(initial={'question':id,})
     return render(request, 'question_detail.html', {
         'question': question,
         'answers': question.answer_set.all()[:],
