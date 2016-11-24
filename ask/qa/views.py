@@ -3,7 +3,9 @@ from django.views.decorators.http import require_GET
 from django.core.paginator import Paginator, EmptyPage
 from qa.models import Question
 from django.http import HttpResponseRedirect
-from qa.forms import AskForm, AnswerForm
+from qa.forms import AskForm, AnswerForm, SignUpForm, LoginForm
+from datetime import datetime, timedelta
+from django.contrib.auth import authenticate, login
 
 def test(request, *args, **kwargs):
     return HttpResponse('OK')
@@ -64,6 +66,9 @@ def question_add(request):
         form = AskForm(request.POST)
         if form.is_valid():
             question = form.save()
+            if request.user:
+            	question.author = request.user
+            	question.save
             url = question.get_absolute_url()
             return HttpResponseRedirect(url)
     else:
@@ -86,3 +91,47 @@ def answer_add(request, id=2):
     return render(request, 'answer_add.html', {
         'form': form,
          })
+
+def signup(request):
+	if request.method == 'POST':
+		form = SignUpForm(request.POST)
+		if form.is_valid():
+			user = form.save()
+			if user is not None and user.is_active:
+				user_data = form.cleaned_data
+				user = authenticate(user = user_data['username'], password = user_data['password'])
+				login(request, user)
+				return HttpResponseRedirect('^$')
+	else:
+		form = SignUpForm()
+	return render(request, 'signup.html', {
+		'form': form
+		})
+
+def login(request):
+	error = ''
+	if request.method == 'POST':
+		url = request.POST.get('continue', '/')
+		form = LoginForm(request.POST)
+		if form.is_valid():
+			user = form.save()
+			if user is not None and user.is_active:
+				login(request, user)
+				return HttpResponseRedirect('url')
+		else:
+			error = 'Incorrect username or password'
+	else:
+		form = LoginForm()
+	return render(request, login.html, {
+		'form': form,
+		'error': error
+		})
+
+
+
+def logout(request):
+	sessid = request.COOKIE.get('sessid')
+	if sessid is not None:
+		Session.objects.delete(key=sessid)
+	url = request.GET.get('continue', '/')
+	return HttpResponseRedirect(url)

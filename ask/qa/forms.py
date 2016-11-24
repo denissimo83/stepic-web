@@ -1,5 +1,7 @@
 from django import forms
 from qa.models import Question, Answer
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 
 class AskForm(forms.Form):
     title = forms.CharField(max_length=255)
@@ -52,4 +54,27 @@ class AnswerForm(forms.Form):
         answer.author_id = 1
         answer.save()
         return answer
+
+class SignUpForm(forms.Form):
+	username = forms.CharField(max_length=25)
+	email = forms.EmailField()
+	password = forms.CharField(max_length=20)
+
+	def clean(self):
+		return self.cleaned_data
+
+	def save(self):
+		user = User.objects.create_user(username, email, password)
+		user.save()
+		return user
+
+class LoginForm(forms.Form):
+	username = forms.CharField(max_length=25)
+	password = forms.CharField(max_length=25)
+
+	def clean(self):
+		return self.cleaned_data
+	def save(self):
+		user = authenticate(username, password)
+		return user
 
