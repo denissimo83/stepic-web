@@ -50,23 +50,29 @@ class AnswerForm(forms.Form):
         return self.cleaned_data
 
     def save(self):
+        self.cleaned_data['question'] = Question.objects.get(id = self.cleaned_data['question'])
         answer = Answer(**self.cleaned_data)
         answer.author_id = 1
+        #answer.question = Question.objects.get(id = self.cleaned_data[question])
         answer.save()
         return answer
 
 class SignUpForm(forms.Form):
-	username = forms.CharField(max_length=25)
-	email = forms.EmailField()
-	password = forms.CharField(max_length=20)
-
-	def clean(self):
-		return self.cleaned_data
-
-	def save(self):
-		user = User.objects.create_user(username, email, password)
-		user.save()
-		return user
+    username = forms.CharField(max_length=25)
+    email = forms.EmailField()
+    password = forms.CharField(max_length=20)
+    def clean(self):
+        return self.cleaned_data
+    def save(self):
+        user = User.objects.create_user(
+            self.cleaned_data['username'], 
+            self.cleaned_data['email'], 
+            self.cleaned_data['password']
+            )
+        user.save()
+        user.set_password(self.cleaned_data['password'])
+        user.save()
+        return user
 
 class LoginForm(forms.Form):
 	username = forms.CharField(max_length=25)
@@ -75,6 +81,6 @@ class LoginForm(forms.Form):
 	def clean(self):
 		return self.cleaned_data
 	def save(self):
-		user = authenticate(username, password)
+		user = authenticate(username=self.cleaned_data['username'], password=self.cleaned_data['password'])
 		return user
 

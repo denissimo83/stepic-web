@@ -11,7 +11,7 @@
 	</header>
 	<p>{{ question.text }}</p>
 
-    <form class="form-horizontal" method="post" action="/answer/">
+    <form class="form-horizontal" method="post" action="/login/">
     {% csrf_token %}
     <fieldset>
     {% for field in form %}
